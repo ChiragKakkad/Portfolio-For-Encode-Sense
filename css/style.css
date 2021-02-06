@@ -1,0 +1,296 @@
+.navbar-nav {
+    padding-left: 30%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.h1,
+h1 {
+    font-size: 3.5rem;
+    padding-left: 450px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /*    background-image: url(image/portfolio-bg.jpg);*/
+    background-image: url(https://lithohtml.themezaa.com/images/portfolio-bg.jpg);
+    background-size: 95% 150%;
+    /*    background-position: 50% 0px;*/
+}
+
+.grid-filter li {
+    display: inline-block;
+    float: none;
+    padding: 0 20px;
+    border: 0;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.alt-font {
+    font-family: Poppins, sans-serif;
+    font-family: fantasy;
+    font-family: cursive;
+}
+
+.grid-filter > li.active > a,
+.grid-filter > li.active > a:focus,
+.grid-filter > li.active > a:hover,
+.grid-filter > li > a:hover {
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid;
+    color: #232323;
+}
+
+.grid-filter li a {
+    border: 0;
+    border-bottom: 1px solid;
+    border-color: transparent;
+    color: #828282;
+    padding-bottom: 2px;
+}
+
+a,
+a:active,
+a:focus {
+    color: #999999;
+}
+
+
+/*images*/
+
+
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+.photography-entry {
+    height: 280px;
+    display: block;
+    z-index: 0;
+    position: relative;
+}
+
+.photography-entry .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #000000;
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .photography-entry .overlay {
+        opacity: .3;
+    }
+}
+
+
+.photography-entry .text {
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.photography-entry .text h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.photography-entry .text span.tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 767.98px) {
+    .photography-entry .text {
+        opacity: 1;
+    }
+}
+
+.photography-entry:hover .overlay,
+.photography-entry:focus .overlay {
+    opacity: .7;
+}
+
+.photography-entry:hover .text,
+.photography-entry:focus .text {
+    opacity: 1;
+}
+
+
+/* footers   */
+
+a {
+    color: #999999;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a {
+    color: #999999;
+    transition: .3s;
+}
+
+
+.footer {
+    position: relative;
+    padding-top: 90px;
+    background: #2c3035;
+}
+
+.container {
+    max-width: 1050px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.footer .copyright {
+    padding: 15px;
+    border-top: 1px solid #3b3e43;
+}
+
+
+.footer .footer-about h2, .footer .footer-link h2 {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.footer .footer-about p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .footer-about h2::after, .footer .footer-link h2::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #999999, #ffffff, #999999);
+    border-radius: 0 100% 100% 0;
+}
+
+
+.footer .footer-link a::before {
+    position: relative;
+/*    content: "\f0da";*/
+    content: "~";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .copyright p, .footer .copyright .col-md-6:last-child p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px)
+.footer .copyright p, .footer .copyright .col-md-6:last-child p {
+    margin: 5px 0;
+    text-align: center;
+}
+.footer .copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+
+/*
+user agent stylesheet
+div {
+    display: block;
+}
+*/
+
+
+/*
+
+a {
+    color: #4F84C4;
+    transition: .3s;
+}
+*/
+/*
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+*/
+
+
+
+
+
+/*
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+*/
